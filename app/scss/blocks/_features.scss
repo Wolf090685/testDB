@@ -1,0 +1,29 @@
+.features {
+    border-bottom: 1px solid #c8c8c8;
+    &__list {
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list-item {
+        width: 20%;
+    }
+    &__list-link {
+        display: flex;
+        align-items: flex-end;        
+        padding: 35px 5px 45px 5px;
+        color: $featureTextColor;
+        transition: all .3s linear;
+        &:hover {
+            background-color: #eee;
+        }
+    }
+    &__img {
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+    }
+    &__title {
+        font-size: 13px;
+    }
+}

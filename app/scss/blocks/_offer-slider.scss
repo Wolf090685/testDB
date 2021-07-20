@@ -1,0 +1,58 @@
+.offer-slider {
+    background: url(../../images/main-bg.jpg) center/cover no-repeat;
+    min-height: 446px;
+    &__item-content {
+        padding-top: 60px;
+        padding-left: 70px;
+        max-width: 600px;
+    }
+    &__subtittle {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 8px;
+        font-family: 'VAGRound', sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: $mainSliderTextColor;
+        background-color: $accentColor;
+        box-shadow: 0px 1px 2px rgba(0,0,0, 0.3);
+    }
+    &__tittle {
+        margin-bottom: 25px;
+        font-family: 'VAGRound', sans-serif;
+        font-size: 60px;
+        line-height: 0.8;
+        color: $mainSliderTextColor;
+    }
+    &__text {
+        color: $mainSliderTextColor; 
+    }
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-top: 50px;
+	li {
+		margin: 0 8px;
+	}
+	button {
+		padding: 0;
+		width: 10px;
+		height: 10px;
+		font-size: 0;
+		border: 1px solid #c5c6c7;		
+		background-color: transparent;
+		cursor: pointer; 
+        transition: all .3s linear;       
+	}
+    button:hover {
+        background-color: #867b6d;
+    }
+	li.slick-active button {
+        border: none;
+		background-color: $accentColor;
+	}
+}

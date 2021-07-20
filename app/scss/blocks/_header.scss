@@ -1,0 +1,23 @@
+.header {
+    border-top: 1px solid #c8c8c8;
+    &__top {
+        position: relative;
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__search-input {
+        width: 239px;
+        height: 25px;
+        padding: 3px 30px 5px 15px;
+        background-color: transparent;
+        border-radius: 2px;
+        border: 1px solid #e5e5e5;
+        font-weight: 400;
+        font-size: 15px;
+        background-image: url(../../images/icons/search-icon.png);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+    }
+}

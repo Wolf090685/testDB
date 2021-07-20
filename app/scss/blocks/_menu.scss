@@ -1,0 +1,53 @@
+.menu {
+    border-top: 1px solid #c8c8c8;
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-left: 75px;
+    }
+    &__list-link {
+        padding: 15px 20px;
+        font-size: 15px;
+        color: $mainMenuTextColor;
+        transition: all .3s linear;
+        &--active {
+            color: #fff;
+            background-color: $featureTextColor;
+            pointer-events: none;
+        }
+        &:hover {
+            color: #fff;
+            background-color: $accentColor;
+        }
+    }
+}
+.menu-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 10;
+    &__line {
+        display: block;
+        background-color: $mainMenuTextColor;
+        width: 35px;
+        height: 4px;
+        border-radius: 4px;
+        margin: 8px 0;
+        transition: all .3s linear;
+    }
+}
+.menu-btn--active .menu-btn__line:first-child {
+    transform: translateY(6px) rotate(-135deg);
+}
+.menu-btn--active .menu-btn__line:nth-child(2) {
+    display: none;
+}
+.menu-btn--active .menu-btn__line:last-child {
+    transform: translateY(-6px) rotate(135deg);
+}
